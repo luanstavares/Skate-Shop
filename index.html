@@ -7,11 +7,42 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="/styles.css" rel="stylesheet">
     <title>Document</title>
-
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@200;300;400;600;700;900&display=swap"
+        rel="stylesheet">
 
 </head>
 
 <body>
+
+    <nav>
+
+        <div class="burgerMenu">
+            <div class="burgerLine" id="burgerLine1"></div>
+            <div class="burgerLine" id="burgerLine2"></div>
+            <div class="burgerLine" id="burgerLine3"></div>
+        </div>
+
+        <div class="burgerSelection">Skateboard Maker</div>
+
+        <div class="shoppingCart">
+            <img id="cartImg" src="./images/shopping_cart_2.svg" alt="">
+
+            <div id="cartCounter">0</div>
+            <!-- <div id="cartCounter">
+                <div id="numberOfItems">1</div>
+                <img id="cartCounterCircle" src="./images/cartCounter.svg" alt="">
+            </div> -->
+        </div>
+    </nav>
+
+    <section id="productInfo">
+        <div id="productName">Flip Skateboard Deck</div>
+        <div id="productPrice">£60.00</div>
+        <div id="productSize">Size 7.5 7.75 8.0 8.25 8.5 8.75</div>
+        <div id="addToCartBtn">Add to Cart +</div>
+    </section>
 
     <div class="productEffect">
 
@@ -22,17 +53,25 @@
         <div class="circleSelector">
             <img src="./images/EllipseSelector.svg" alt="">
             <ul id="brands">
-                <li><img class="item" src="./images/flip_logo_2.png" alt=""></li>
-                <li><img class="item" src="./images/element_logo_2.png" alt=""></li>
-                <li><img class="item" src="./images/PlanB_logo_2.png" alt=""></li>
-                <li><img class="item" src="./images/Santa_Cruz_logo_2.png" alt=""></li>
-                <li><img class="item" src="./images/Baker_logo_2.png" alt=""></li>
-                <li><img class="item" src="./images/DGK_logo_2.png" alt=""></li>
+                <li id="item1"><img class="item" src="./images/flip_logo_2.png" alt=""></li>
+                <li id="item2"><img class="item" src="./images/element_logo_2.png" alt=""></li>
+                <li id="item3"><img class="item" src="./images/PlanB_logo_2.png" alt=""></li>
+                <li id="item4"><img class="item" src="./images/Santa_Cruz_logo_2.png" alt=""></li>
+                <li id="item5"><img class="item" src="./images/Baker_logo_2.png" alt=""></li>
+                <li id="item6"><img class="item" src="./images/DGK_logo_2.png" alt=""></li>
             </ul>
         </div>
 
     </div>
 
+    <footer>
+        <div id=footerLink1>Delivery</div>
+        <div id=footerLink2>Contact Us</div>
+        <div id=footerLink3>Privacy</div>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.js"
+        integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.7.1/gsap.min.js"></script>
     <script src="/index.js"></script>
 

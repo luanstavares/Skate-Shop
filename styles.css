@@ -2,48 +2,191 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Cairo', sans-serif;
 }
 
 body {
     height: 100vh;
     background: radial-gradient(78.14% 78.14% at 51.3% 50%, #AEDDFF 0%, #000C2C 100%);
     overflow: hidden;
-    display: flex;
-    justify-content: center;    
-}
-
-.productEffect{
-    display: flex;
-    align-items: center;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 10% 60%fr 1fr 1fr;
     justify-content: center;
 }
 
-.deckImg{
+/* .header{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    position: absolute;
+    left: 5rem;
+    top: 1rem;
+    color: #d3d3d3;
+    font-weight: 400;
+    font-size: 13px;
+} */
+
+nav {
+    display: grid;
+    grid-template-columns: 5% 1fr 1fr 15%;
+    position: absolute;
+    width: 100vw;
+    top: 10px;
+    align-items: center;
+    color: #d3d3d3;
+    margin: 0 50px;
+}
+
+.burgerMenu {
+    width: 25px;
+    height: 20px;
+    display: grid;
+    align-items: center;
+    justify-self: right;
+    margin: 0 15px 0 0;
+    padding: 0;
+    cursor: pointer;
+}
+
+.burgerLine {
+    width: 100%;
+    height: 1px;
+    background-color: #d3d3d3;
+}
+
+.burgerSelection {
+    grid-column: 2/3;
+    font-size: 18px;
+}
+
+.shoppingCart {
+    grid-column: 4/5;
+    margin: 20px 0px;
+    padding: 0;
+    cursor: pointer;
+    position: relative;
+}
+
+#cartCounter {
+    margin: 0;
+    padding: 0;
+    width: 1rem;
+    height: 1rem;
+    border-radius: 50%;
+    background: #FF5C00;
+    box-shadow: 0px 1px 4px #FF5C00;
+    position: absolute;
+    font-size: 10px;
+    font-weight: bold;
+    text-align: center;
+    vertical-align: middle;
+    left: 20px;
+    bottom: 25px;
+}
+
+#productInfo {
+    grid-column: 2/3;
+    grid-row: 2/3;
+    margin-top: 100px;
+    color: #d3d3d3;
+}
+
+#productName {
+    font-size: 20px;
+    font-weight: 700;
+    text-shadow: 0px 1px 4px rgba(0, 0, 0, 0.25);
+}
+
+#productPrice {
+    font-size: 18px;
+}
+
+#productSize {
+    font-size: 14px;
+    font-weight: 300;
+    margin: 2px 0px;
+}
+
+#addToCartBtn {
+    background: #FF5C00;
+    width: fit-content;
+    padding: 5px 12px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 10px;
+    align-items: center;
+    text-align: center;
+    color: #fff;
+    margin-top: 20px;
+}
+
+.productEffect {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    grid-column: 3/4;
+    grid-row: 2/3;
+}
+
+.deckImg {
     position: absolute;
     z-index: 1;
 }
 
-.filterEffect{
+.filterEffect {
     display: flex;
 }
-.circleSelector{
+
+.circleSelector {
     transform: scale(0);
     display: flex;
+    padding-left: 50px;
 }
 
-#brands{
+#brands {
     list-style: none;
     display: flex;
-    justify-content: space-evenly;
+    justify-content: center;
+    align-items: center;
     flex-direction: column;
     transform: scale(1);
-    
 }
 
-.item{
-    padding: 10px;
-    
-}  
+#brands li {
+    transform: scale(0);
+}
 
+.item {
+    padding: 0;
+    margin: 15px 0px;
+    cursor: pointer;
+}
 
+footer {
+    display: grid;
+    grid-template-columns: 6% 1fr 1fr 13%;
+    width: 100vw;
+    position: absolute;
+    bottom: 50px;
+    color: #d3d3d3;
+    align-items: center;
+    margin: 0 50px;
+    font-size: 14px;
+}
 
+#footerLink1 {
+    grid-column: 1/2;
+    justify-self: right;
+}
+
+#footerLink2 {
+    grid-column: 2/3;
+    margin-left: 20px;
+}
+
+#footerLink3 {
+    grid-column: 3/4;
+    justify-self: right;
+}
